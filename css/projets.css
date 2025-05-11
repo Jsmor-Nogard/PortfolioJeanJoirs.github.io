@@ -1,0 +1,165 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f5deb3;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2d3436;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #e74c3c;
+}
+
+/* Navigation verticale */
+.projet-nav {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.projet-nav ul {
+    list-style: none;
+}
+
+.projet-nav a {
+    display: block;
+    padding: 8px 0;
+    color: #2d3436;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.projet-nav a:hover {
+    color: #e74c3c;
+}
+
+/* Sections projets */
+.projet-section {
+    min-height: 100vh;
+    padding: 80px 10% 80px 15%;
+    scroll-margin-top: 80px; /* Évite la superposition avec le header */
+}
+
+#projet1 { background: #f9f9f9; }
+#projet2 { background: #f0f0f0; }
+#projet3 { background: #e8e8e8; }
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #2d3436;
+    color: #ffffff;
+}
+
+.social-links img {
+    height: 25px;
+    margin-left: 15px;
+    filter: invert(1);
+    transition: opacity 0.3s;
+}
+
+.social-links img:hover {
+    opacity: 0.7;
+}
+
+/* Styles spécifiques à la page projets */
+.projet-section {
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+    gap: 40px;
+}
+
+.projet-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.projet-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #f5deb3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.projet-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.team-info {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.team-size {
+    background: #e74c3c;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.techno {
+    background: #f5deb3;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.projet-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.projet-content strong {
+    color: #e74c3c;
+}
